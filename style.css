@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/maincow.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+body{
+   
+    font-family: sans-serif;
+}
+nav{
+    background-color: orange;
+    display: flex;
+    /*padding: 2% 6%;*/
+    justify-content: space-between;
+    align-items: center;
+
+}
+.menu-bar{
+    display: flex;
+    background-color: orange;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff; 
+}
+.menu-bar ul li{
+    width: 80px;
+    margin: 15px;
+    padding: 20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+    background: rgb(213, 129, 60);
+    border-radius: 3px;
+} 
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover  .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: orange;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul
+{
+    display: block;
+    margin: 8px;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    font-size: small;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li a:hover
+{
+    color: bisque;
+}
+
+
+
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 52px;
+}
+
+
